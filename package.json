@@ -7,15 +7,14 @@
   "browser": "lib/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "rollup -c",
-    "dist": "NODE_ENV=production rollup -c",
+    "build": "NODE_ENV=production rollup -c & yarn types",
     "dev": "rollup -c -w",
     "pretest": "npm run build",
     "test": "jest",
     "preversion": "yarn test",
     "prepublish": "yarn build",
-    "start": "styleguidist server",
     "typecheck": "tsc --noEmit",
+    "types": "tsc --emitDeclarationOnly",
     "release-version": "smooth-release"
   },
   "repository": {
@@ -85,6 +84,7 @@
     "react": "^0.14 || ^15 || ^16",
     "react-dom": "^0.14 || ^15 || ^16"
   },
+  "types": "lib/ts/index.d.ts",
   "browserslist": [
     "last 1 version",
     "> 1%"
