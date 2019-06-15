@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:artursvonda/react-placeholder"
+    "url": "git@github.com:artursvonda/react-pure-placeholder"
   },
   "keywords": [
     "react",
@@ -35,12 +35,12 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/artursvonda/react-placeholder/issues"
+    "url": "https://github.com/artursvonda/react-pure-placeholder/issues"
   },
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/artursvonda/react-placeholder",
+  "homepage": "https://github.com/artursvonda/react-pure-placeholder",
   "typings": "lib",
   "dependencies": {
     "prop-types": "^15.6.0"
