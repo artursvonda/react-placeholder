@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES3",
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
     "declaration": true,
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "experimentalDecorators": true,
     "outDir": "./lib",
@@ -12,7 +13,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strictNullChecks": true,
+    "strict": true,
     "sourceMap": false,
     "alwaysStrict": true,
     "jsx": "react",
