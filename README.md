@@ -15,7 +15,7 @@ React.renderComponent(
   <div>
     <Suspense placeholder={<MediaPlaceholder rows={7} />}>
       <MyComponent />
-    </ReactPlaceholder>
+    </Suspense>
   </div>,
   document.body);
 ```
