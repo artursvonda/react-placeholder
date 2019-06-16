@@ -2,6 +2,9 @@
 
 
 
+## [v0.2.0](https://github.com/artursvonda/react-pure-placeholder/tree/v0.2.0) (2019-06-16)
+[Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v3.0.2...v0.2.0)
+
 ## [v3.0.2](https://github.com/artursvonda/react-pure-placeholder/tree/v3.0.2) (2019-02-21)
 [Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v3.0.1...v3.0.2)
 

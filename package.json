@@ -1,6 +1,6 @@
 {
   "name": "react-pure-placeholder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A React components to provide placeholders while content is loading",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
