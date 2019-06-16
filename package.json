@@ -7,17 +7,16 @@
   "browser": "lib/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "rollup -c && yarn types && build-storybook",
+    "build": "rollup -c && yarn types && yarn build-storybook",
     "dev": "rollup -c -w",
     "pretest": "npm run build",
     "test": "jest",
-    "preversion": "yarn test",
     "prepublish": "yarn full-build",
     "typecheck": "tsc --noEmit",
     "types": "tsc --emitDeclarationOnly",
     "release-version": "smooth-release",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o docs"
+    "build-storybook": "rimraf docs && build-storybook -c .storybook -o docs"
   },
   "repository": {
     "type": "git",
