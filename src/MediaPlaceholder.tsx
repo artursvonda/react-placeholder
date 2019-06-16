@@ -1,13 +1,21 @@
 import * as PropTypes from 'prop-types';
-import React, { FC } from 'react';
+import React, { CSSProperties, FC } from 'react';
 import { defaultColor } from './_contants';
 import RoundShape from './RoundShape';
 import ParagraphPlaceholder from './ParagraphPlaceholder';
 
 export type Props = {
+    /** Number of rows to display in paragraph */
     rows: number;
+    /**
+     * Placeholder color
+     *
+     * @default "#CDCDCD"
+     */
     color?: string;
-    style?: React.CSSProperties;
+    /** Custom style */
+    style?: CSSProperties;
+    /** Class for root element */
     className?: string;
 };
 
@@ -22,7 +30,7 @@ const MediaPlaceholder: FC<Props> = ({ className, style, color = defaultColor, r
                 marginRight: 10,
             }}
         />
-        <ParagraphPlaceholder color={color} rows={rows} />
+        <ParagraphPlaceholder color={color} rows={rows} style={{ width: '100%' }} />
     </div>
 );
 

@@ -9,6 +9,7 @@
     "experimentalDecorators": true,
     "outDir": "./lib/ts",
     "baseUrl": ".",
+    "rootDirs": ["src", "stories"],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,

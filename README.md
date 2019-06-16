@@ -20,7 +20,7 @@ React.renderComponent(
   document.body);
 ```
 
-[**Live Demo**](http://buildo.github.io/react-placeholder/#!/ReactPlaceholder)
+[**Storybook and Live Demo**](http://artursvonda.github.io/react-pure-placeholder)
 
 ### Install
 ```
@@ -32,3 +32,5 @@ or
 ```
 yarn add react-pure-placeholder
 ```
+
+### 
