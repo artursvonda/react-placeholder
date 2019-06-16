@@ -6,8 +6,6 @@ import replace from 'rollup-plugin-replace';
 import typescript from 'rollup-plugin-typescript';
 import pkg from './package.json';
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
-
 const globals = {
     react: 'React',
     'react-dom': 'ReactDOM',
@@ -15,12 +13,6 @@ const globals = {
 };
 
 const external = ['react', 'react-dom', 'prop-types'];
-const plugins = [
-    typescript(), // so Rollup can convert TypeScript to JavaScript
-    replace({
-        'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
-    }),
-];
 
 export default [
     // browser-friendly UMD build
@@ -37,7 +29,11 @@ export default [
             moduleSideEffects: false,
         },
         plugins: [
-            ...plugins,
+            typescript(),
+            replace({
+                // Compile UMD package in production by default
+                'process.env.NODE_ENV': 'production',
+            }),
             resolve(),
             commonjs(),
             minify(),
@@ -57,7 +53,7 @@ export default [
     {
         input: 'src/index.ts',
         external: external,
-        plugins: plugins,
+        plugins: [typescript()],
         treeshake: {
             moduleSideEffects: false,
         },

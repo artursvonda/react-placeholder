@@ -7,7 +7,7 @@
   "browser": "lib/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "NODE_ENV=production rollup -c & yarn types",
+    "build": "rollup -c && yarn types",
     "dev": "rollup -c -w",
     "pretest": "npm run build",
     "test": "jest",
