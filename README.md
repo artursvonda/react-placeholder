@@ -20,7 +20,7 @@ React.renderComponent(
   document.body);
 ```
 
-[**Storybook and Live Demo**](http://artursvonda.github.io/react-pure-placeholder)
+[**Storybook and Live Demo**](http://artursvonda.github.io/react-pure-placeholder/index.html)
 
 ### Install
 ```
