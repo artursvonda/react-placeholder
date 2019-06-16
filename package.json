@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rollup -c && yarn types && yarn build-storybook",
     "dev": "rollup -c -w",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "typecheck": "tsc --noEmit",
     "types": "tsc --emitDeclarationOnly",
     "release-version": "smooth-release",
