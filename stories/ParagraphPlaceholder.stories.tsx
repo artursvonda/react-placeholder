@@ -3,8 +3,13 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { defaultColor } from '../src/_contants';
 import ParagraphPlaceholder from '../src/ParagraphPlaceholder';
+import { withKnobs } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
 const stories = storiesOf('Components', module);
+
+stories.addDecorator(withKnobs);
+stories.addDecorator(withInfo);
 
 stories.add(
     'ParagraphPlaceholder',

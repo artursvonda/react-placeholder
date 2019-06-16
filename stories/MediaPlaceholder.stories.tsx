@@ -1,11 +1,14 @@
+import { withInfo } from '@storybook/addon-info';
+import { color, number, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { defaultColor } from '../src/_contants';
 import MediaPlaceholder from '../src/MediaPlaceholder';
 
-import { number, color } from '@storybook/addon-knobs';
-
 const stories = storiesOf('Components', module);
+
+stories.addDecorator(withKnobs);
+stories.addDecorator(withInfo);
 
 stories.add(
     'MediaPlaceholder',
