@@ -8,6 +8,12 @@ import { withInfo } from '@storybook/addon-info';
 
 const stories = storiesOf('Components', module);
 
+stories.addParameters({
+    options: {
+        showPanel: true,
+    },
+});
+
 stories.addDecorator(withKnobs);
 stories.addDecorator(withInfo);
 

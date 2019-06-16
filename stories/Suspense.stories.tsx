@@ -3,6 +3,11 @@ import React, { ButtonHTMLAttributes, lazy, Suspense, useReducer } from 'react';
 import MediaPlaceholder from '../src/MediaPlaceholder';
 
 const stories = storiesOf('Examples', module);
+stories.addParameters({
+    options: {
+        showPanel: false,
+    },
+});
 
 const getLazyComponent = () =>
     lazy(
