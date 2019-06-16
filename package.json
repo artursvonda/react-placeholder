@@ -7,7 +7,7 @@
   "browser": "lib/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "rollup -c && yarn types && yarn build-storybook",
+    "build": "rollup -c && yarn types",
     "dev": "rollup -c -w",
     "prepare": "yarn build",
     "typecheck": "tsc --noEmit",
