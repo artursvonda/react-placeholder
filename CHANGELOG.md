@@ -2,8 +2,8 @@
 
 
 
-## [v0.2.0](https://github.com/artursvonda/react-pure-placeholder/tree/v0.2.0) (2019-06-16)
-[Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v3.0.2...v0.2.0)
+## [v0.3.0](https://github.com/artursvonda/react-pure-placeholder/tree/v0.3.0) (2019-06-16)
+[Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v3.0.2...v0.3.0)
 
 ## [v3.0.2](https://github.com/artursvonda/react-pure-placeholder/tree/v3.0.2) (2019-02-21)
 [Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v3.0.1...v3.0.2)
@@ -48,7 +48,10 @@
 [Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v1.0.0...v1.0.1)
 
 ## [v1.0.0](https://github.com/artursvonda/react-pure-placeholder/tree/v1.0.0) (2017-03-23)
-[Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v0.0.3...v1.0.0)
+[Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v0.2.0...v1.0.0)
+
+## [v0.2.0](https://github.com/artursvonda/react-pure-placeholder/tree/v0.2.0) (2019-06-16)
+[Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v0.0.3...v0.2.0)
 
 ## [v0.0.3](https://github.com/artursvonda/react-pure-placeholder/tree/v0.0.3) (2016-12-29)
 [Full Changelog](https://github.com/artursvonda/react-pure-placeholder/compare/v0.0.2...v0.0.3)
