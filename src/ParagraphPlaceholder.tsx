@@ -30,20 +30,14 @@ const getRows = ({
         />
     ));
 
-const TextBlock: FC<Props> = ({ style, className, ...props }) => (
-    <div
-        className={className}
-        style={{
-            width: '100%',
-            ...style,
-        }}
-    >
+const ParagraphPlaceholder: FC<Props> = ({ style, className, ...props }) => (
+    <div className={className} style={style}>
         {getRows(props)}
     </div>
 );
 
 if (process.env.NODE_ENV !== 'production') {
-    TextBlock.propTypes = {
+    ParagraphPlaceholder.propTypes = {
         rows: PropTypes.number.isRequired,
         color: PropTypes.string.isRequired,
         lineSpacing: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -57,4 +51,4 @@ if (process.env.NODE_ENV !== 'production') {
     };
 }
 
-export default TextBlock;
+export default ParagraphPlaceholder;

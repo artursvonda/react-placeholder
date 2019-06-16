@@ -2,7 +2,7 @@ import * as PropTypes from 'prop-types';
 import React, { FC } from 'react';
 import { defaultColor } from './_contants';
 import RoundShape from './RoundShape';
-import TextBlock from './TextBlock';
+import ParagraphPlaceholder from './ParagraphPlaceholder';
 
 export type Props = {
     rows: number;
@@ -11,7 +11,7 @@ export type Props = {
     className?: string;
 };
 
-const MediaBlock: FC<Props> = ({ className, style, color = defaultColor, rows }) => (
+const MediaPlaceholder: FC<Props> = ({ className, style, color = defaultColor, rows }) => (
     <div className={className} style={{ display: 'flex', ...style }}>
         <RoundShape
             color={color}
@@ -22,12 +22,12 @@ const MediaBlock: FC<Props> = ({ className, style, color = defaultColor, rows })
                 marginRight: 10,
             }}
         />
-        <TextBlock color={color} rows={rows} />
+        <ParagraphPlaceholder color={color} rows={rows} />
     </div>
 );
 
 if (process.env.NODE_ENV !== 'production') {
-    MediaBlock.propTypes = {
+    MediaPlaceholder.propTypes = {
         rows: PropTypes.number.isRequired,
         color: PropTypes.string,
         style: PropTypes.object,
@@ -35,4 +35,4 @@ if (process.env.NODE_ENV !== 'production') {
     };
 }
 
-export default MediaBlock;
+export default MediaPlaceholder;

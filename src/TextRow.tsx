@@ -22,7 +22,6 @@ const TextRow: FC<Props> = ({
         className={className}
         style={{
             maxHeight,
-            width: '100%',
             height: '1em',
             backgroundColor: color,
             marginTop: lineSpacing,
