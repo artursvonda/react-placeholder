@@ -32,7 +32,3 @@ or
 ```
 yarn add react-pure-placeholder
 ```
-
-### Components
-
-#### Media
